@@ -26,7 +26,7 @@ RUN GRPC_HEALTH_PROBE_VERSION=v0.3.6 && \
 
 # get packages
 WORKDIR /recommendationservice
-COPY requirements.txt requirements.txt
+COPY src/recommendationservice/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # add files into working directory
